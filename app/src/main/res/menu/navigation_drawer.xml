@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/mail"
+   android:title="@string/maill"/>
+<!--    <menu>-->
+<!--        <group android:id="@+id/in">-->
+<item
+    android:id="@+id/inbox"
+    android:checkable="true"
+    android:title="@string/mail"
+    android:enabled="true"
+    android:icon="@drawable/allinboxes"/>
+    <item
+        android:id="@+id/primary"
+        android:checkable="true"
+        android:title="Primary"
+        android:enabled="true"
+        android:icon="@drawable/primary"/>
+    <item
+        android:id="@+id/social"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="Social"
+        android:icon="@drawable/social"/>
+<!--            <item-->
+<!--                android:id="@+id/div"-->
+<!--                android:enabled="false"-->
+<!--               android:actionLayout="@layout/divider_layout"/>-->
+
+    <item
+        android:id="@+id/starred"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="Starred"
+        android:icon="@drawable/starred"/>
+    <item
+        android:id="@+id/imp"
+        android:checkable="true"
+        android:title="@string/important"
+        android:enabled="true"
+        android:icon="@drawable/important"/>
+    <item
+        android:id="@+id/sent"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/sent"
+        android:icon="@drawable/sent"/>
+    <item
+        android:id="@+id/scheduled"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/scheduled"
+        android:icon="@drawable/scheduled"/>
+    <item
+        android:id="@+id/outbox"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/outbox"
+        android:icon="@drawable/outbox"/>
+    <item
+        android:id="@+id/draft"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/draft"
+        android:icon="@drawable/draft" />
+    <item
+        android:id="@+id/mails"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/all_mails"
+        android:icon="@drawable/mail"/>
+    <item
+        android:id="@+id/bin"
+        android:checkable="true"
+        android:enabled="true"
+        android:title="@string/bin"
+        android:icon="@drawable/bin"/>
+<!--        </group>-->
+<!--    </menu>-->
+<!--</item>-->
+</menu>
