@@ -18,5 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/nav_menu" />
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/getdate"
+    android:backgroundTint="#F89B9B"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Get Date"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
