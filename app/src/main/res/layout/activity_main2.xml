@@ -7,16 +7,19 @@
     android:clipToPadding="false"
     tools:context=".SecondActivity">
 
+
     <com.google.android.material.navigationrail.NavigationRailView
         android:id="@+id/navigationRail"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:background="@drawable/clock_gradient"
         android:clipToPadding="false"
         app:headerLayout="@layout/navigation_rail_fab"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/nav_menu" />
+        app:menu="@menu/nav_menu"
+        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator2"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/getdate"
@@ -48,14 +51,43 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="@string/password"
-        app:endIconMode="password_toggle"
-        app:layout_constraintBottom_toTopOf="@id/getdate"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+       app:endIconMode="password_toggle"
+        app:errorIconDrawable="@drawable/error"
+        app:layout_constraintBottom_toTopOf="@id/textField3"
         app:layout_constraintStart_toEndOf="@id/navigationRail"
         app:startIconDrawable="@drawable/password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number" />
+            android:inputType="textPassword" />
+
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField3"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/getdate"
+        app:layout_constraintStart_toEndOf="@id/navigationRail">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            app:simpleItems="@array/category" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+<TimePicker
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:timePickerMode="spinner"
+    android:background="@drawable/clock_gradient"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toEndOf="@id/navigationRail"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
