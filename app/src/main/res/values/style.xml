@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSliderStyle" parent="Widget.MaterialComponents.Slider">
+        <item name="labelStyle">@style/CustomSliderStyle</item>
+    </style>
+    <style name="CustomSliderLabel">
+        <item name="android:textColor">#F18585</item>
+    </style>
+</resources>

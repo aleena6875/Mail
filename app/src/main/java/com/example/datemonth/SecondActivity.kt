@@ -1,18 +1,26 @@
 package com.example.datemonth
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_EXPANDED
+import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_HALF_EXPANDED
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.datepicker.MaterialCalendar
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigationrail.NavigationRailView
 
+import com.google.android.material.sidesheet.SideSheetBehavior
+
 class SecondActivity : AppCompatActivity() {
     private lateinit var getdate: Button
-
-    @SuppressLint("MissingInflatedId")
+private lateinit var right_side_sheet_button:MaterialButton
+    @SuppressLint("MissingInflatedId", "WrongConstant")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -56,5 +64,10 @@ class SecondActivity : AppCompatActivity() {
                 .build()
             dataPicker.show(supportFragmentManager, dataPicker.toString())
         }
+        right_side_sheet_button=findViewById(R.id.right_side_sheet_button)
+right_side_sheet_button.setOnClickListener {
+    val intent= Intent(this,FourthActivity::class.java)
+    startActivity(intent)
+}
     }
 }

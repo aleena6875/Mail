@@ -62,6 +62,29 @@
         <item>Standard</item>
         <item>Delux</item>
     </string-array>
+    <string-array name="format">
+        <item>All</item>
+        <item>Doc</item>
+        <item>PDF</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="labels">Labels</string>
+    <string name="events">Events</string>
+    <string name="personal">Personal</string>
+    <string name="projects">Projects</string>
+    <string name="reminders">Reminders</string>
+    <string name="work">Work</string>
+    <string name="clickable">clickable</string>
+    <string name="format">Format</string>
+    <string name="range">Range</string>
+    <string name="date">Date</string>
+    <string name="any_time">Any time</string>
+    <string name="older_than_a_year">Older than a year</string>
+    <string name="title" />
+    <string name="supporting_text" />
+    <string name="cancel" />
+    <string name="decline">\n</string>
+    <string name="accept" />
 </resources>
