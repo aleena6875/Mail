@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="calclr">#FAB69B</color>
     <color name="calclrr">#EFC3B2</color>
+    <color name="dot_selected_color">#F1A3A3</color>
+    <color name="dot_unselected_color">#C5C4C4</color>
 </resources>

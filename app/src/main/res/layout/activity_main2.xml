@@ -94,6 +94,7 @@
         android:id="@+id/right_side_sheet_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/next"
         app:layout_constraintTop_toBottomOf="@id/tp"
         app:layout_constraintStart_toEndOf="@id/navigationRail"
         android:backgroundTint="#F89B9B"/>
